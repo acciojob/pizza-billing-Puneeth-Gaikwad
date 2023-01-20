@@ -30,7 +30,7 @@ public class Pizza {
     }
 
     public void addExtraCheese(){
-        // your code goes here
+     
     	if(isChesseAdded==false) {
     		price+=cheese;
     		isChesseAdded=true;
@@ -38,24 +38,21 @@ public class Pizza {
     }
 
     public void addExtraToppings(){
-        // your code goes here    
+
     	
     	if(isToppingsAdded==false) {
     		if(isVeg==true) {
-    		//bill=bill+"Extra Toppings Added: " + vegToppings+"\n";
     		price+=vegToppings;
     		isToppingsAdded=true;
     	}
     		else {
-    			//bill=bill+"Extra Toppings Added: "+nonVegToppings+"\n";
         		price+=nonVegToppings;
         		isToppingsAdded=true;
     		}
     	}
     }
 
-    public void addTakeaway(){
-        // your code goes here
+    public void addTakeaway(){     
     	if(isTakeAway==false) {
     	price=price+paperbag;
     	isTakeAway=true;
@@ -64,7 +61,6 @@ public class Pizza {
     }
 
     public String getBill(){
-        // your code goes here
     	if(isChesseAdded==true) {
     		bill=bill+"Extra Cheese Added: " + cheese+"\n";
     	}
